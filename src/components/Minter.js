@@ -137,7 +137,7 @@ function Minter() {
         info.web3.utils.toHex(Number(mintInfo.cost) * mintInfo.amount)
       ),
       data: info.contract.methods
-        .mint(info.account, mintInfo.amount)
+        .mint(mintInfo.amount)
         .encodeABI(),
     };
     try {
@@ -295,7 +295,7 @@ function Minter() {
           }}
           className="_90"
           target="_blank"
-          href="https://polygonscan.com/token/0x827acb09a2dc20e39c9aad7f7190d9bc53534192"
+          href="https://rinkeby.etherscan.io/address/0x99c4ef704f3a6941ad7e53540b2c2ba206965d0d"
         >
           View Contract
         </a>
